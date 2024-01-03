@@ -2,8 +2,9 @@
   "name": "open-api-pokemon-client",
   "version": "0.0.1",
   "description": "TS Pokemon client generated from OpenApi scheme",
-  "main": "index.ts",
+  "main": "index.js",
   "scripts": {
+    "generate:types": "openapi-typescript ./api-scheme/pokemon-api-v1.yml --output ./definitions/pokemon-api.d.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -14,5 +15,12 @@
     "typescript"
   ],
   "author": "syntax-punk",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syntax-punk/open-api-pokemon-client.git"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "openapi-typescript": "^6.7.3"
+  }
 }
