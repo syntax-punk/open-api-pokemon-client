@@ -1,0 +1,18 @@
+{
+  "name": "open-api-pokemon-client",
+  "version": "0.0.1",
+  "description": "TS Pokemon client generated from OpenApi scheme",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openapi",
+    "pokemon",
+    "pokedex",
+    "api",
+    "typescript"
+  ],
+  "author": "syntax-punk",
+  "license": "ISC"
+}
