@@ -6,6 +6,7 @@
   "scripts": {
     "gen:types": "openapi-typescript ./api-scheme/pokemon-api-v1.yml --output ./definitions/pokemon-api.d.ts",
     "gen:client": "openapi-generator-cli generate -i ./api-scheme/pokemon-api-v1.yml -g typescript-axios -o ./src/pokemon-api-client",
+    "gen:client:viaconf": "openapi-generator-cli generate",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

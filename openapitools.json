@@ -2,6 +2,19 @@
   "$schema": "./node_modules/@openapitools/openapi-generator-cli/config.schema.json",
   "spaces": 2,
   "generator-cli": {
-    "version": "7.2.0"
+    "version": "6.6.0",
+    "generators": {
+      "axios-generator": {
+        "generatorName": "typescript-axios",
+        "inputSpec": "api-scheme/pokemon-api-v1.yml",
+        "output": "src/api/",
+        "apiPackage": "api",
+        "modelPackage": "model",
+        "additionalProperties": {
+          "withSeparateModelsAndApi": true,
+          "enumPropertyNaming": "original"
+        }
+      }
+    }
   }
 }
