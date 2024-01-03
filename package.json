@@ -4,7 +4,8 @@
   "description": "TS Pokemon client generated from OpenApi scheme",
   "main": "index.js",
   "scripts": {
-    "generate:types": "openapi-typescript ./api-scheme/pokemon-api-v1.yml --output ./definitions/pokemon-api.d.ts",
+    "gen:types": "openapi-typescript ./api-scheme/pokemon-api-v1.yml --output ./definitions/pokemon-api.d.ts",
+    "gen:client": "openapi-generator-cli generate -i ./api-scheme/pokemon-api-v1.yml -g typescript-axios -o ./src/pokemon-api-client",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -21,6 +22,10 @@
   },
   "license": "ISC",
   "devDependencies": {
+    "@openapitools/openapi-generator-cli": "^2.7.0",
     "openapi-typescript": "^6.7.3"
+  },
+  "dependencies": {
+    "axios": "^1.6.3"
   }
 }
